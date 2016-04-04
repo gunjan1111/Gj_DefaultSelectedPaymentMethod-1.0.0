@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Gj_DefaultSelectedPaymentMethod>
+      <version>1.0.0</version>
+    </Gj_DefaultSelectedPaymentMethod>
+  </modules>
+  <global>
+    <helpers>
+      <defaultselectedpaymentmethod>
+        <class>Gj_DefaultSelectedPaymentMethod_Helper</class>
+      </defaultselectedpaymentmethod>
+    </helpers>
+	<blocks>
+	  <defaultselectedpaymentmethod>
+		<class>Gj_DefaultSelectedPaymentMethod_Block</class>
+	  </defaultselectedpaymentmethod>
+			<checkout>
+				<rewrite>
+					<onepage_payment_methods>Gj_DefaultSelectedPaymentMethod_Block_Checkout_Onepage_Payment_Methods</onepage_payment_methods>
+				</rewrite>
+			</checkout>
+	</blocks>
+  </global>
+</config> 
